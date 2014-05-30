@@ -2067,6 +2067,12 @@ header h2 {
     *width: 97.9166666666667% -correction;
     *margin: 0 1.0416666666667% -correction;
   }
+  .me a span {
+    display: none;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
 }
 @media only screen and (min-width: 1224px) {
   .ಠ_ಠ {
