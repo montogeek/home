@@ -1998,11 +1998,11 @@ header h2 {
   font-weight: 200;
   padding: 10px 16px;
   text-decoration: none;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: background-color 0.4s ease-in, color 0.3s linear;
+  -moz-transition: background-color 0.4s ease-in, color 0.3s linear;
+  -o-transition: background-color 0.4s ease-in, color 0.3s linear;
+  -ms-transition: background-color 0.4s ease-in, color 0.3s linear;
+  transition: background-color 0.4s ease-in, color 0.3s linear;
 }
 .me a:hover {
   background-color: #1ba1e2;
@@ -2121,5 +2121,22 @@ header h2 {
     margin: 0 1.0416666666667%;
     *width: 47.9166666666667% -correction;
     *margin: 0 1.0416666666667% -correction;
+  }
+  .me a span {
+    display: none;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.1s ease;
+    -moz-transition: opacity 0.1s ease;
+    -o-transition: opacity 0.1s ease;
+    -ms-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease;
+  }
+  .me a:hover span {
+    display: inline;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
 }
