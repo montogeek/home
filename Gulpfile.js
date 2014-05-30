@@ -45,6 +45,9 @@ gulp.task('fonts', function() {
   gulp.src('./src/fonts/Fira-master/**/*.{ttf,woff,eot}')
     .pipe(flatten())
     .pipe(gulp.dest('./fonts/Fira/'));
+  gulp.src('./src/fonts/Font-awesome/**/*.{svg,ttf,woff,eot}')
+    .pipe(flatten())
+    .pipe(gulp.dest('./fonts/font-awesome/'));
 });
 
 // Use nib

@@ -1,4 +1,5 @@
 @import "nib"
+@import "font-awesome/index"
 @import "_grid"
 @import "variables"
 @import "fonts"
@@ -7,23 +8,37 @@
 body
     font-family 'Fira Sans', sans-serif
     font-size 14px
-    color #333
+    color #222
     background-color #FFF
     margin 0
 
-.ಠ_ಠ
-    width: auto;
-    // max-width: 960px;
-    float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-
-h3
-    text-align center
+.logo
+    // background-color #F5F5F9
     margin 1em auto
+    svg
+        width 100%
+        height (400px/14px)em
+
+#logo
+    .circle_top
+        animation circle_top 3s ease forwards
+        stroke-dasharray animation-circle-top
+        stroke-dashoffset animation-circle-top
+
+    .circle_bottom
+        animation circle_bottom 3s ease forwards
+        stroke-dasharray animation-circle-bottom
+        stroke-dashoffset animation-circle-bottom
+
+    .triangle_top
+        animation triangle_top 3s ease forwards
+        stroke-dasharray animation-triangle-top
+        stroke-dashoffset animation-triangle-top
+
+    .triangle_bottom
+        animation triangle_bottom 3s ease forwards
+        stroke-dasharray animation-triangle-bottom
+        stroke-dashoffset animation-triangle-bottom
 
 header
     // background-color #00B1E1
@@ -39,62 +54,39 @@ header
         font-weight 300
         font-size 2.8em
         margin 0 auto
-.logo
-    // background-color #F5F5F9
-    margin 1em auto
-    svg
-        width 100%
-        height (400px/14px)em
-
 .me
     text-align center
-    .contact
+    a
         color #000000
-        border 2px solid #00B1E1
         border-radius 6px
         font-size 1.4em
         font-weight 200
         padding 10px 16px
         text-decoration none
-        transition all 0.5s ease
+        transition all 0.4s ease
         &:hover
             background-color #1BA1E2
             color #FFFFFF
-.about
-    column(6)
+    .mail
+        &:hover
+            background-color #4285f4
+    .twitter
+        &:hover
+            background-color #55acee
+    .github
+        &:hover
+            background-color #4183c4
+    .linkedin
+        &:hover
+            background-color #0976b4
+    .stack-overflow
+        &:hover
+            background-color #fe7a15
+    .vsco
+        &:hover
+            background-color #a8a749
 
-.blog
-    column(6)
-
-
-#logo
-    .circle_top
-    	animation circle_top 3s ease forwards
-    	stroke-dasharray animation-circle-top
-    	stroke-dashoffset animation-circle-top
-
-    .circle_bottom
-        animation circle_bottom 3s ease forwards
-        stroke-dasharray animation-circle-bottom
-        stroke-dashoffset animation-circle-bottom
-
-    .triangle_top
-        animation triangle_top 3s ease forwards
-        stroke-dasharray animation-triangle-top
-        stroke-dashoffset animation-triangle-top
-
-    .triangle_bottom
-    	animation triangle_bottom 3s ease forwards
-    	stroke-dasharray animation-triangle-bottom
-    	stroke-dashoffset animation-triangle-bottom
-
-// Media
-@media screen and (max-width: 960px)
-    .about
-        column(12)
-    .blog
-        column(12)
-@media screen and (min-device-width : 320px) and (max-device-width : 480px)
+@media only screen and (max-width : 480px)
     .ಠ_ಠ
         margin auto
 
@@ -112,3 +104,49 @@ header
         svg
             width 100%
             height (300/14px)em
+    .about
+        column(12)
+    .blog
+        column(12)
+
+@media only screen and (min-width : 1224px)
+    .ಠ_ಠ
+        width: auto;
+        // max-width: 960px;
+        float: none;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0;
+
+    h3
+        text-align center
+        margin 1em auto
+
+    header
+        // background-color #00B1E1
+        // color #FFF
+        padding 1em
+        text-align center
+        h1
+            font-weight 500
+            font-size 5.8em
+            line-height 1em
+            margin 0.5em 0 0
+        h2
+            font-weight 300
+            font-size 2.8em
+            margin 0 auto
+    .logo
+        // background-color #F5F5F9
+        margin 1em auto
+        svg
+            width 100%
+            height (400px/14px)em
+
+    .about
+        column(6)
+
+    .blog
+        column(6)
