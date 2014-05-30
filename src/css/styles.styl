@@ -63,7 +63,7 @@ header
         font-weight 200
         padding 10px 16px
         text-decoration none
-        transition background-color 0.4s ease-in, color 0.3s linear
+        transition background-color 0.4s ease-out, color 0.3s linear
         &:hover
             background-color #1BA1E2
             color #FFFFFF
@@ -144,13 +144,6 @@ header
             font-weight 300
             font-size 2.8em
             margin 0 auto
-    .logo
-        // background-color #F5F5F9
-        margin 1em auto
-        svg
-            width 100%
-            height (400px/14px)em
-
     .about
         column(6)
 
@@ -161,6 +154,7 @@ header
         a
             span
                 display none
+                margin-left 0.2em
                 opacity 0
                 transition opacity 0.1s ease
             &:hover span
