@@ -1929,6 +1929,15 @@ body {
   background-color: #fff;
   margin: 0;
 }
+.ಠ_ಠ {
+  width: auto;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
 .logo {
   margin: 1em auto;
 }
@@ -2026,6 +2035,18 @@ header h2 {
 .me .vsco:hover {
   background-color: #a8a749;
 }
+.me a span {
+  display: none;
+  margin-left: 0.2em;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.1s ease;
+  -moz-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
+  -ms-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
 @media only screen and (max-width: 480px) {
   .ಠ_ಠ {
     margin: auto;
@@ -2067,23 +2088,8 @@ header h2 {
     *width: 97.9166666666667% -correction;
     *margin: 0 1.0416666666667% -correction;
   }
-  .me a span {
-    display: none;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-  }
 }
-@media only screen and (min-width: 1224px) {
-  .ಠ_ಠ {
-    width: auto;
-    float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
+@media only screen and (min-width: 480px) {
   h3 {
     text-align: center;
     margin: 1em auto;
@@ -2102,36 +2108,6 @@ header h2 {
     font-weight: 300;
     font-size: 2.8em;
     margin: 0 auto;
-  }
-  .about {
-    display: inline;
-    float: left;
-    overflow: hidden;
-    width: 47.9166666666667%;
-    margin: 0 1.0416666666667%;
-    *width: 47.9166666666667% -correction;
-    *margin: 0 1.0416666666667% -correction;
-  }
-  .blog {
-    display: inline;
-    float: left;
-    overflow: hidden;
-    width: 47.9166666666667%;
-    margin: 0 1.0416666666667%;
-    *width: 47.9166666666667% -correction;
-    *margin: 0 1.0416666666667% -correction;
-  }
-  .me a span {
-    display: none;
-    margin-left: 0.2em;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.1s ease;
-    -moz-transition: opacity 0.1s ease;
-    -o-transition: opacity 0.1s ease;
-    -ms-transition: opacity 0.1s ease;
-    transition: opacity 0.1s ease;
   }
   .me a:hover span {
     display: inline;
